@@ -1,0 +1,17 @@
+{
+  "name": "nyc_subway_app",
+  "version": "1.0.0",
+  "description": "Is my train running on time?",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.7",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
