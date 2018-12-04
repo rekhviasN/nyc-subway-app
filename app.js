@@ -48,14 +48,14 @@ const determineNote = (newStatus, train) => {
 
 const setUpAndDownTime = (newStatus, train) => {
   let newStamp = Date.now()
-  let diff = newStamp - trainStatus[train].timestamp
+  let diff = newStamp - trainStatus[train].latestTimestamp
   if(trainStatus[train].status === "DELAYED"){
     trainStatus[train].downtime+=diff
   }
   if(trainStatus[train].status ==="Not delayed"){
     trainStatus[train].uptime+=diff
   }
-  trainStatus[train].timestamp = newStamp 
+  trainStatus[train].latestTimestamp = newStamp 
 }
 
 // Function to mke API call & log data to console 
