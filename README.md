@@ -10,5 +10,6 @@ You will find real-time status updates in your console.
 
 ## Use as an API 
 http://localhost:5000/uptime/<train>
+  
 http://localhost:5000/status/<train>
 
